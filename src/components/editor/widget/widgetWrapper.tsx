@@ -28,7 +28,11 @@ export const WrapperWidget: React.FC<IWrapperWidget> = ({ children, element }) =
           }
         }
         `}</style>
-      <div id={`widget-${element.id}-wrapper`} className={'widget-wrapper'} style={{}}>
+      <div
+        id={`widget-${element.id}-wrapper`}
+        className={'widget-wrapper'}
+        style={{ background: 'green', width: '100%' }}
+      >
         <div id={`widget-${element.id}-content`} className={'widget-content'} style={{}}>
           {children}
         </div>

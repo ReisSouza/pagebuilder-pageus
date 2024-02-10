@@ -16,6 +16,8 @@ export const ColumnBase = ({ settings, id, elements }: IEditorElement) => {
       <div
         id={`${id}-populated`}
         style={{
+          padding: 24,
+          background: 'red',
           ...settingsColumn.populatedCSS,
           alignContent:
             settings.populateColumnContentAlign === 'padrão' ? 'flex-start' : settings.populateColumnContentAlign,

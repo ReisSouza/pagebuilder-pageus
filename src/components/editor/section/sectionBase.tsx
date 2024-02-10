@@ -10,11 +10,14 @@ export const SectionBase = ({ settings, id, elements }: IEditorElement) => {
     <section
       style={{
         ...settingsSection.sectionCSS,
+        background: 'blue',
+        border: '1px solid #FFF',
       }}
       id={id}
     >
       <div
         style={{
+          background: 'yellow',
           ...settingsSection.containerCSS,
         }}
       >
